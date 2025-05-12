@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Menghilangkan margin dan padding untuk memastikan gambar memenuhi layar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
         .thumbnail {
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-            cursor: pointer;
-            object-fit: cover;
+            width: 100%;
+            height: 100vh; /* Menggunakan tinggi layar penuh */
+            object-fit: cover; /* Memastikan gambar tetap terjaga proporsinya */
+            display: block; /* Menghindari adanya ruang di bawah gambar */
         }
     </style>
 </head>
